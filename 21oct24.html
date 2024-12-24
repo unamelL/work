@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="diagram"></div>
+</body>
+<script>
+  let names = ['Москва', 'Рим', 'Париж'];
+  let population = [80000000, 50000, 700000]
+
+  let diagram = document.getElementById('diagram')
+
+  let elem2 = document.createElement('div')
+  elem2.innerText = names;
+  diagram.append(elem2);
+  
+  let elem = document.createElement('div')
+  elem.style.width = '50px'
+  elem.style.height = '200px'
+  elem.style.backgroundColor = '#c91d02'
+  document.body.append(elem)
+</script>
+</html>

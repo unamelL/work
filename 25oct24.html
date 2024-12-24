@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let myDiv = document.createElement('div');
+    myDiv.innerText = 'wtf';
+    document.body.append(myDiv);
+
+    let myButton1 = document.createElement('button');
+    myButton1.innerText = 'knopka';
+    document.body.append(myButton1);
+    myButton1.onclick = myFuncton1;
+    function myFuncton1(){
+        document.body.style.backgroundColor = 'black'
+    }
+
+    let myButton2 = document.createElement('button');
+    myButton2.innerText = 'red';
+    document.body.append(myButton2);
+    myButton2.onclick = myFuncton2;
+    function myFuncton2(){
+        document.body.style.backgroundColor = 'red'
+    }
+    let myButton3 = document.createElement('button');
+    myButton3.innerText = 'fashion';
+    document.body.append(myButton3);
+    myButton3.onclick = myFuncton3;
+    function myFuncton3(){
+        for(let i = 0; i < 15; i++){
+            let rick = document.createElement('div');
+            rick.innerText = 'fashion' + i;
+            rick.style.color = 'purple';
+            rick.style.backgroundColor = 'yellow';
+            rick.style.width = i*5 + 'px';
+            rick.style.height = i*1.5 + 'px';
+            rick.style.margin = 'px';
+            rick.style.fontSize = i + 'px';
+            document.body.append(rick);
+        }
+    }
+
+    let myImage = document.createElement('img');
+    myImage.src = 'trooper.png';
+    document.body.append(myImage);
+</script>
+</html>

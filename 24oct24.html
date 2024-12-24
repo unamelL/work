@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    for(let i = 0; i < 15; i++){
+        let rick = document.createElement('div');
+        rick.innerText = 'fashion';
+        rick.style.color = 'purple';
+        rick.style.backgroundColor = 'yellow';
+        rick.style.width = i*5 + 'px';
+        rick.style.height = i*1.5 + 'px';
+        rick.style.margin = 'px';
+        rick.style.fontSize = i + 'px';
+        document.body.append(rick);
+    }
+</script>
+</html>
